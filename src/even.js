@@ -18,10 +18,10 @@ export const yesAndNo = (min = 0, max = 52) => {
     } else if (randomNumber % 2 !== 0 && ansver === 'no') {
      console.log(result);
     } else {
-      return console.log("'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again, " + read);
+      return console.log("'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again, " + read + '!');
     }
     i += 1;
   }
-  return console.log('Congratulations, ' + read);
+  return console.log('Congratulations, ' + read + '!');
 };
 
