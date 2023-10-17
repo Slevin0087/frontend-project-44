@@ -22,10 +22,8 @@ export const gamesLibrary = (gameConditionStrin, gameCode) => {
   console.log(gameConditionStrin);
   while (i < 3) {
     const gameConditionAndSolution = gameCode();
-    console.log(gameConditionAndSolution[0]);
     console.log('Question: ' + gameConditionAndSolution[0]);
     const ansver = readlineSync.question('Your answer: ');
-    console.log(ansver); 
     const correctAnswer = gameConditionAndSolution[1];
       if (ansver === correctAnswer) {
      console.log(result);
