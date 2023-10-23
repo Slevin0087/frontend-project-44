@@ -7,7 +7,7 @@ export const gameCodeYesAndNo = () => {
   let i = 0;
   const ansverYes = 'yes';
   const ansverNo = 'no';
-  const randomNumber = random(52);
+  const randomNumber = random(0, 52);
     if(randomNumber % 2 === 0) {
       result = ansverYes;
     } else {

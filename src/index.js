@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
 
-export const random = (max) => {
+export const random = (min, max) => {
   let result = 0;
   let i = 0;
+  min = Math.ceil(min);
+  max = Math.floor(max);
   while (i < 3) {
-   result = Math.floor(Math.random() * max);
+   result = Math.floor(Math.random() * (max - min + 1)) + min;
    i += 1
   }
   return result;
