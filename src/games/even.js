@@ -1,4 +1,4 @@
-import {gamesLibrary, random} from '../index.js';
+import { gamesLibrary, random } from '../index.js';
 
 const gameConditionStringYesAndNo = 'Answer "yes" if the number is even, otherwise answer "no".';
 

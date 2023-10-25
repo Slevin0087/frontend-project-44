@@ -1,4 +1,4 @@
-import {gamesLibrary, random} from '../index.js';
+import { gamesLibrary, random } from '../index.js';
 
 const gameConditionStringCalc = 'What is the result of the expression?';
 
@@ -8,7 +8,7 @@ const gameCodeCalc = () => {
   const number2 = random(0, 10);
   const signs = ['+', '-', '*'];
   const sign = signs[random(0, signs.length - 1)];
-  const question = number1 + ' ' + sign + ' ' + number2;
+  const question = `${number1} ${sign} ${number2}`;
   switch (sign) {
     case '+':
       result = number1 + number2;
