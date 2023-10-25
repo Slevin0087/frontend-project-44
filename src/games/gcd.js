@@ -12,8 +12,8 @@ const nod = (a, b) => {
 };
 
 const gameCodeGcd = () => {
-  const randomNumber1 = random(0, 25);
-  const randomNumber2 = random(0, 25);
+  const randomNumber1 = random(1, 25);
+  const randomNumber2 = random(1, 25);
   const result = nod(randomNumber1, randomNumber2);
   const numberNod = `${randomNumber1} ${randomNumber2}`;
   return [numberNod, String(result)];
