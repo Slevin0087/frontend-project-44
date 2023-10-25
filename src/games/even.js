@@ -2,7 +2,7 @@ import { gamesLibrary, random } from '../index.js';
 
 const gameConditionStringYesAndNo = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export const gameCodeYesAndNo = () => {
+const gameCodeYesAndNo = () => {
   let result = '';
   const ansverYes = 'yes';
   const ansverNo = 'no';

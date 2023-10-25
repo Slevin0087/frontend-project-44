@@ -1,4 +1,4 @@
-import {gamesLibrary, random} from '../index.js';
+import { gamesLibrary, random } from '../index.js';
 
 const gameConditionStringProgression = 'What number is missing in the progression?';
 

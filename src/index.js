@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 export const random = (min, max) => {
   const minCeil = Math.ceil(min);
   const maxFloor = Math.floor(max);
-   return Math.floor(Math.random() * (maxFloor - minCeil + 1)) + minCeil;
+  return Math.floor(Math.random() * (maxFloor - minCeil + 1)) + minCeil;
 };
 
 export const gamesLibrary = (gameConditionStrin, gameCode) => {

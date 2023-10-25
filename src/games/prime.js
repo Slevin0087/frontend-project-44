@@ -1,4 +1,4 @@
-import {gamesLibrary, random} from '../index.js';
+import { gamesLibrary, random } from '../index.js';
 
 const gameConditionStringProgression = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
