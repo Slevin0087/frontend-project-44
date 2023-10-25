@@ -7,7 +7,7 @@ const gameCodeCalc = () => {
   const number1 = random(0, 10);
   const number2 = random(0, 10);
   const signs = ['+', '-', '*'];
-  const sign = signs[random(signs.length - 1)];
+  const sign = signs[random(0, signs.length - 1)];
   let question = number1 + sign + number2;
     switch (sign) {
       case '+':
