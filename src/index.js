@@ -1,19 +1,13 @@
 import readlineSync from 'readline-sync';
 
 export const random = (min, max) => {
-  let result = 0;
-  let i = 0;
   min = Math.ceil(min);
   max = Math.floor(max);
-  while (i < 3) {
-   result = Math.floor(Math.random() * (max - min + 1)) + min;
-   i += 1
-  }
-  return result;
+   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 export const gamesLibrary = (gameConditionStrin, gameCode) => {
-  let result = 'Correct!';
+  const result = 'Correct!';
   let i = 0;
   const welcomeString = 'Welcome to the Brain Games!';
   console.log(welcomeString);
@@ -27,8 +21,8 @@ export const gamesLibrary = (gameConditionStrin, gameCode) => {
     console.log('Question: ' + gameConditionAndSolution[0]);
     const ansver = readlineSync.question('Your answer: ');
     const correctAnswer = gameConditionAndSolution[1];
-      if (ansver === correctAnswer) {
-     console.log(result);
+    if (ansver === correctAnswer) {
+      console.log(result);
     } else {
       return console.log("'" + ansver + "'" + " is wrong answer ;(. Correct answer was " + "'" + correctAnswer + "'.\n Let's try again, " + read + '!');
     }
