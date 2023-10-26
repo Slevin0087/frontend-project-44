@@ -23,6 +23,6 @@ make install
 
 [prime]
 
-[progression]
+[progression]![Alt text](image.png)
 
 This repository was created by a Hexlet student. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=nodejs-package).
