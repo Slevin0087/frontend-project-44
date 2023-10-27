@@ -13,15 +13,19 @@
 make install
 ```
 
-### screenshots:
+## screenshots:
 
-[even]
+### even
+<img src="./screens/even.jpg" alt='progression'>
 
-[calc]
+### calc
+<img src="./screens/calc.jpg" alt='progression'>
 
-[gcd]
+### gcd
+<img src="./screens/gcd.jpg" alt='progression'>
 
-[prime]
+### prime
+<img src="./screens/prime.jpg" alt='progression'>
 
 ### progression
 <img src="./screens/progression.jpg" alt='progression'>
