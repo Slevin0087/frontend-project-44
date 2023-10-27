@@ -16,16 +16,16 @@ make install
 ## screenshots:
 
 ### even
-<img src="./screens/even.jpg" alt='progression'>
+<img src="./screens/even.jpg" alt='even'>
 
 ### calc
-<img src="./screens/calc.jpg" alt='progression'>
+<img src="./screens/calc.jpg" alt='calc'>
 
 ### gcd
-<img src="./screens/gcd.jpg" alt='progression'>
+<img src="./screens/gcd.jpg" alt='gcd'>
 
 ### prime
-<img src="./screens/prime.jpg" alt='progression'>
+<img src="./screens/prime.jpg" alt='prime'>
 
 ### progression
 <img src="./screens/progression.jpg" alt='progression'>
