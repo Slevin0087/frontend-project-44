@@ -16,9 +16,11 @@ const startPrime = () => {
   const randomPrime = printRandomNumber(2, 31);
   const value = isPrime(randomPrime);
   if (value === false) {
-    return [String(randomPrime), 'no'];
+    const answerNo = 'no';
+    return [String(randomPrime), answerNo];
   }
-  return [String(randomPrime), 'yes'];
+  const answerYes = 'yes';
+  return [String(randomPrime), answerYes];
 };
 
 export default () => gamesLibrary(gameConditionStringProgression, startPrime);

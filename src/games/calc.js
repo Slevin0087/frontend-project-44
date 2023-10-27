@@ -4,21 +4,16 @@ import printRandomNumber from '../random.js';
 const gameConditionStringCalc = 'What is the result of the expression?';
 
 const calc = (number1, number2, sign) => {
-  let result = 0;
   switch (sign) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      result = null;
+      throw new Error(`unknown sign: '${sign}'!`);
   }
-  return result;
 };
 
 const startCalc = () => {
