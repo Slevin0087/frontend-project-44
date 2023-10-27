@@ -1,26 +1,24 @@
-import { gamesLibrary, random } from '../index.js';
+import gamesLibrary from '../index.js';
+import printRandomNumber from '../random.js';
 
 const gameConditionStringProgression = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const falseAndTrue = () => {
-  const randomPrime = random(2, 31);
-  for (let i = 2; i <= randomPrime; i += 1) {
-    if (randomPrime % i === 0 && randomPrime !== i) {
-      return [randomPrime, false];
+const isPrime = (randomNumber) => {
+  for (let i = 2; i <= randomNumber; i += 1) {
+    if (randomNumber % i === 0 && randomNumber !== i) {
+      return false;
     }
   }
-  return [randomPrime, randomPrime !== 1];
+  return randomNumber !== 1;
 };
 
-const gameCodePrime = () => {
-  let result = '';
-  const value = falseAndTrue();
-  if (value[1] === false) {
-    result = 'no';
-  } else {
-    result = 'yes';
+const startPrime = () => {
+  const randomPrime = printRandomNumber(2, 31);
+  const value = isPrime(randomPrime);
+  if (value === false) {
+    return [String(randomPrime), 'no'];
   }
-  return [String(value[0]), result];
+  return [String(randomPrime), 'yes'];
 };
 
-export default () => gamesLibrary(gameConditionStringProgression, gameCodePrime);
+export default () => gamesLibrary(gameConditionStringProgression, startPrime);

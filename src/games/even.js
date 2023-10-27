@@ -1,18 +1,21 @@
-import { gamesLibrary, random } from '../index.js';
+import gamesLibrary from '../index.js';
+import printRandomNumber from '../random.js';
 
 const gameConditionStringYesAndNo = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const gameCodeYesAndNo = () => {
-  let result = '';
-  const ansverYes = 'yes';
-  const ansverNo = 'no';
-  const randomNumber = random(0, 52);
-  if (randomNumber % 2 === 0) {
-    result = ansverYes;
-  } else {
-    result = ansverNo;
+const isEven = (number) => {
+  if (number % 2 === 0) {
+    return true;
   }
-  return [randomNumber, result];
+  return false;
 };
 
-export default () => gamesLibrary(gameConditionStringYesAndNo, gameCodeYesAndNo);
+const startEven = () => {
+  const random = printRandomNumber(1, 52);
+  if (isEven(random) === true) {
+    return [random, 'yes'];
+  }
+  return [random, 'no'];
+};
+
+export default () => gamesLibrary(gameConditionStringYesAndNo, startEven);

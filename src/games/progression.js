@@ -1,12 +1,13 @@
-import { gamesLibrary, random } from '../index.js';
+import gamesLibrary from '../index.js';
+import printRandomNumber from '../random.js';
 
 const gameConditionStringProgression = 'What number is missing in the progression?';
 
 const arrProgression = () => {
-  const minNumberProgression = random(1, 10);
+  const minNumberProgression = printRandomNumber(1, 10);
   const result = [minNumberProgression];
-  const lengthProgression = random(5, 10);
-  const stepProgression = random(2, 8);
+  const lengthProgression = printRandomNumber(5, 10);
+  const stepProgression = printRandomNumber(2, 8);
   for (let i = 0, j = stepProgression; i < lengthProgression; i += 1, j += stepProgression) {
     const progression = minNumberProgression + j;
     result.push(progression);
@@ -14,11 +15,11 @@ const arrProgression = () => {
   return result;
 };
 
-const gameCodeProgression = () => {
+const startProgression = () => {
   let result = [];
   let i = 0;
   const arr = arrProgression();
-  const randomNumber = arr[random(0, arr.length - 1)];
+  const randomNumber = arr[printRandomNumber(0, arr.length - 1)];
   while (i < arr.length) {
     if (randomNumber === arr[i]) {
       result.push('..');
@@ -32,4 +33,4 @@ const gameCodeProgression = () => {
   return [result, String(randomNumber)];
 };
 
-export default () => gamesLibrary(gameConditionStringProgression, gameCodeProgression);
+export default () => gamesLibrary(gameConditionStringProgression, startProgression);

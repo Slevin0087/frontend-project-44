@@ -1,4 +1,5 @@
-import { gamesLibrary, random } from '../index.js';
+import gamesLibrary from '../index.js';
+import printRandomNumber from '../random.js';
 
 const gameConditionStringGcd = 'Find the greatest common divisor of given numbers.';
 
@@ -11,12 +12,12 @@ const nod = (a, b) => {
   return nod(max % min, min);
 };
 
-const gameCodeGcd = () => {
-  const randomNumber1 = random(1, 25);
-  const randomNumber2 = random(1, 25);
+const startGcd = () => {
+  const randomNumber1 = printRandomNumber(1, 25);
+  const randomNumber2 = printRandomNumber(1, 25);
   const result = nod(randomNumber1, randomNumber2);
   const numberNod = `${randomNumber1} ${randomNumber2}`;
   return [numberNod, String(result)];
 };
 
-export default () => gamesLibrary(gameConditionStringGcd, gameCodeGcd);
+export default () => gamesLibrary(gameConditionStringGcd, startGcd);
