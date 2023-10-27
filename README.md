@@ -23,6 +23,6 @@ make install
 
 [prime]
 
-[progression](<img src="screens/progression.jpg" alt='progression'>)
+[progression](<img src="./progression.jpg" alt='progression'>)
 
 This repository was created by a Hexlet student. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=nodejs-package).
