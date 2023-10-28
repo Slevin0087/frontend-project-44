@@ -7,12 +7,8 @@ const isEven = (number) => number % 2 === 0;
 
 const startEven = () => {
   const random = printRandomNumber(1, 52);
-  if (isEven(random) === true) {
-    const answerYes = 'yes';
-    return [random, answerYes];
-  }
-  const answerNo = 'no';
-  return [random, answerNo];
+  const answer = isEven(random) === true ? 'yes' : 'no';
+  return [random, answer];
 };
 
 export default () => gamesLibrary(gameConditionStringYesAndNo, startEven);
